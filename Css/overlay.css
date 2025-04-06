@@ -2,7 +2,7 @@
 #overlay {
   background-color: rgba(0, 0, 0, 0.5);
   display: none;
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   width: 100%;
