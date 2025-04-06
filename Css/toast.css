@@ -1,0 +1,32 @@
+/* Toast Notifications */
+.toast {
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--dark-primary-color);
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    display: none;
+    font-size: 1rem;
+    z-index: 1000;
+    width: max-content;
+}
+
+.toast-win {
+    background-color: var(--success-color);
+    font-weight: bolder;
+}
+
+.toast-already {
+    background-color: var(--error-color);
+}
+
+.toast.show {
+    display: block;
+
+}
+
+.toast.show.toast-already {
+    animation: Shake 200ms 3;
+}

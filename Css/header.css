@@ -1,0 +1,32 @@
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    height: 3rem;
+    width: 100%;
+    border-bottom: 1px var(--primary-color) solid;
+    margin-bottom: 1rem;
+}
+header h1{
+
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    font-weight: 900;
+    font-size: 3rem;
+    background: url("/assets/images/Name_background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.header-btn{
+    width: 2rem;
+    height: 2rem;
+    margin-right: .5rem;
+    margin-left: .5rem;
+    cursor: pointer;
+}

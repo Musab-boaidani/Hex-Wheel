@@ -1,0 +1,33 @@
+@import "theme.css";
+@import "layout.css";
+@import "overlay.css";
+@import "toast.css";
+@import "header.css";
+@import "components.css";
+@import "animations.css";
+
+/* Global vars */
+:root {
+    --primary-color: #F1F0EA;
+    --background-color: #0D1B2A;
+    --success-color: #679436;
+    --error-color: #A22522;
+    --warning-color: #F0803C;
+
+    /* Light Mode Variables */
+    --light-primary-color: #0D1B2A;
+    --light-background-color: #F1F0EA;
+
+    /* Dark Mode Variables */
+    --dark-primary-color: #F1F0EA;
+    --dark-background-color: #0D1B2A;
+
+    --my-transition:none;
+}
+
+
+
+
+
+
+

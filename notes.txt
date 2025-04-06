@@ -1,0 +1,32 @@
+
+theme:
+
+#0D1B2A back
+
+#679436 right and win
+
+#F0803C wrong place
+
+#F1F0EA border and color 
+
+#A22522 already guessed
+
+
+
+game about guessing a color hex
+color 
+hex
+guess
+wheel
+
+
+HexWheel 
+Wheel of Colors
+Hue Hunt 
+
+
+game name: Hex Wheel 
+
+https://freefrontend.com/css-animation-examples/
+https://prismic.io/blog/css-animation-examples#5-animated-css-mail-button
+https://iro.js.org/

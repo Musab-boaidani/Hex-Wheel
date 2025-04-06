@@ -1,0 +1,119 @@
+/* overlay */
+#overlay{
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom:  0;
+    width: 100%;
+    z-index: 1000;
+}
+#overlay .modal {
+    position: relative;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    background-color: var(--background-color);
+    border: 0.1rem solid var(--primary-color);
+    border-radius: 0.5rem;
+    padding: 1rem;
+
+    width:50%;
+
+}
+.modal .sections{
+        max-height: 90vh;
+    overflow-y: auto;
+}
+.modal .title{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: var(--background-color);
+    border-bottom: 1px solid var(--primary-color);
+    height: fit-content;
+
+
+}
+.modal .title span{
+
+    font-size: 2.5rem;
+    font-weight: bold;
+    
+}
+.btn-close{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0%;
+    transform: translateX(-50%);
+    border: none;
+    background-color: transparent;
+    font-size: 2rem;
+    width: 2rem;
+    height: 2rem;
+    padding: 0;
+    border-radius: .5rem;
+    
+}
+.btn-close:hover{
+
+    background-color: var(--error-color);
+    color: var(--dark-primary-color);
+
+}
+#btn-howto{
+    mask-image: url(/assets/images/howto.svg);
+    mask-size: cover;
+    background-repeat: no-repeat;   
+    background-size: 2rem 2rem;
+    background-color: var(--primary-color);
+    border: none;
+
+}
+#how-to ul li{
+    font-size: 1rem;
+    margin: 1rem 0 1rem 0; 
+
+}
+.howto-color-box{
+    width: 2rem !important; 
+    height: 2rem!important; 
+    font-size: 1.2rem!important;  
+    border-radius: 20%!important; 
+}
+#btn-sittings{
+
+    mask-image: url(/assets/images/gear.svg);
+    mask-size: cover;
+    background-repeat: no-repeat;   
+    background-size: 2rem 2rem;
+    background-color: var(--primary-color);
+    border: none;
+}
+#btn-sittings:hover{
+    animation: spin 2s linear infinite;
+}
+.section{
+    margin-top: 2rem;
+}
+.section-name{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+select {
+    padding:0.3rem .7rem 0.3rem .7rem;
+
+    border: 0.1rem solid var(--primary-color);
+    border-radius: 0.3rem;
+    background: var(--background-color);
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1rem;
+
+}

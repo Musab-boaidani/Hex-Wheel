@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Hex Wheel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/mediaQueries.css" />
+
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+
+    <script src="https://cdn.jsdelivr.net/npm/@jaames/iro@5"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="Js/main.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Hex Wheel</h1>
+      <button id="btn-howto" class="header-btn"></button>
+      <button id="btn-sittings" class="header-btn"></button>
+      <div id="theme" class="header-btn">
+        <label id="theme-circle" for="theme-toggle">
+          <input type="checkbox" id="theme-toggle" />
+          <div class="sun"></div>
+          <div class="moon"></div>
+        </label>
+      </div>
+    </header>
+    <div id="overlay">
+      <div id="sittings-modal" class="modal display-none">
+        <div class="title">
+          <span>Sittings</span>
+          <button id="sittings-close" class="btn-close">×</button>
+        </div>
+        <div class="section">
+          <div class="section-name"><span>Difcility</span></div>
+          <select name="difcility" id="sb-difcility">
+            <option value="normal">Normal - Blind Guess</option>
+            <option value="easy">Easy - Color Match</option>
+          </select>
+        </div>
+      </div>
+      <div id="win-screen" class="modal display-none">
+        <div class="title"><span>You Won!</span></div>
+        <div class="section">
+          <div class="section-name"><span></span></div>
+        </div>
+        <div class="section">
+          <div class="section-name" style="display: flex; align-items: center">
+            <span>Answer Color:</span>
+            <div class="win-color-box" id="win-color"></div>
+          </div>
+          <div class="section-name">
+            <span>Answer Color hex:</span><span id="win-hex"></span>
+          </div>
+          <div class="section-name">
+            <span>Total Guesses:</span><span id="num-guess">0</span>
+          </div>
+          <div class="sitting-name"></div>
+        </div>
+        <button id="Againbtn" class="btn">Play Again?</button>
+      </div>
+      <div id="how-to" class="modal display-none">
+        <div class="title">
+          <span>Guides</span>
+          <button id="sittings-close" class="btn-close">×</button>
+        </div>
+        <div class="sections">
+          <div class="section">
+            <div class="section-name"><span>How To Play:</span></div>
+            <ul>
+              <li>Use the color picker on the wheel to select a color.</li>
+              <li>Click the "Guess" button to submit your guess.</li>
+              <li>If the guess matches the target color, you win!</li>
+              <li>
+                The color of the tiles will change to show how close your guess
+                was to the color.
+              </li>
+            </ul>
+            <div class="color-row" id="color-row">
+              <div id="num">#</div>
+              <div class="color-box right-Place">8</div>
+              <div class="color-box">e</div>
+              <div class="color-box">7</div>
+              <div class="color-box wrong-Place">d</div>
+              <div class="color-box">f</div>
+              <div class="color-box">f</div>
+              <div class="color-box" style="background-color: #8e7dff"></div>
+            </div>
+            <ul>
+              <li>
+                Green Like the
+                <div class="color-box right-Place howto-color-box">8</div>
+                here is in the write spot.
+              </li>
+              <li>
+                Orange like the
+                <div class="color-box wrong-Place howto-color-box">d</div>
+                here is the worng spot but the Answer dose have a d in it.
+              </li>
+              <li>
+                The other tiles Like
+                <div class="color-box howto-color-box">e</div>
+                and
+                <div class="color-box howto-color-box">f</div>
+                are not in the Answer at all.
+              </li>
+              <li>
+                The last tile
+                <div
+                  class="color-box howto-color-box"
+                  style="background-color: #8e7dff"
+                ></div>
+                is just to show the color of this guess.
+              </li>
+            </ul>
+          </div>
+          <div class="section">
+            <div class="section-name"><span>Too hard for you?</span></div>
+            you can change the difcility
+            <ul>
+              <li>
+                <strong>Normal - Blind Guess:</strong> you don't know any thing
+                about the Answer
+              </li>
+              <li>
+                <strong>Easy - Color Match: </strong>you know how the Answer
+                color look like
+              </li>
+            </ul>
+          </div>
+          <div class="section">
+            <div class="section-name"><span>Enjoy!</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="toast toast-already">You already Tried this color!</div>
+      <div class="toast toast-win">Congratulation <span>🎉</span></div>
+    </div>
+    <div class="container">
+      <div id="Color-picer">
+        <div id="color-wheel"></div>
+        <button id="max"></button>
+        <button id="shrink"></button>
+      </div>
+
+      <div id="Answer" class="display-none">
+        Target Color
+        <div id="Answer-color-box"></div>
+      </div>
+
+      <button id="guessbtn" class="btn">Guess</button>
+      <!-- <button id="Againbtn" class="btn">Play Again?</button> -->
+      <!-- curent guess -->
+      <div class="color-row" id="color-row">
+        <div id="num">#</div>
+        <div class="color-box" id="r1"></div>
+        <div class="color-box" id="r2"></div>
+        <div class="color-box" id="g1"></div>
+        <div class="color-box" id="g2"></div>
+        <div class="color-box" id="b1"></div>
+        <div class="color-box" id="b2"></div>
+        <div class="color-box" id="current-color"></div>
+      </div>
+      <hr />
+      <div id="guess"></div>
+    </div>
+  </body>
+</html>
