@@ -8,26 +8,19 @@
 
 /* Global vars */
 :root {
-    --primary-color: #F1F0EA;
-    --background-color: #0D1B2A;
-    --success-color: #679436;
-    --error-color: #A22522;
-    --warning-color: #F0803C;
+  --primary-color: #f1f0ea;
+  --background-color: #0d1b2a;
+  --success-color: #679436;
+  --error-color: #a22522;
+  --warning-color: #f0803c;
 
-    /* Light Mode Variables */
-    --light-primary-color: #0D1B2A;
-    --light-background-color: #F1F0EA;
+  /* Light Mode Variables */
+  --light-primary-color: #0d1b2a;
+  --light-background-color: #f1f0ea;
 
-    /* Dark Mode Variables */
-    --dark-primary-color: #F1F0EA;
-    --dark-background-color: #0D1B2A;
+  /* Dark Mode Variables */
+  --dark-primary-color: #f1f0ea;
+  --dark-background-color: #0d1b2a;
 
-    --my-transition:none;
+  --my-transition: none;
 }
-
-
-
-
-
-
-

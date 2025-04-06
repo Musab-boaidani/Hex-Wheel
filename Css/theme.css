@@ -1,44 +1,40 @@
-
 /* Theme Toggle */
-#theme-toggle{
-    display: none;
+#theme-toggle {
+  display: none;
 }
 #theme-circle {
-    display: grid;
-    place-items: center;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
-    background-color: var(--primary-color);
-
+  display: grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: var(--primary-color);
 }
 .sun {
-    grid-column: 1 / 1;
-    grid-row: 1 / 1;
-    height: 1.5rem;
-    width: 1.5rem;
-    transition: transform 500ms;
-    transform: scale(0);
-    background-image: url("/assets/images/sun.svg");
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+  height: 1.5rem;
+  width: 1.5rem;
+  transition: transform 500ms;
+  transform: scale(0);
+  background-image: url("/assets/images/sun.svg");
 
-    background-repeat: no-repeat;   
-    background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .moon {
-    grid-column: 1 / 1;
-    grid-row: 1 / 1;
-    height: 1.5rem;
-    width: 1.5rem;
-    transition: transform 500ms;
-    background-image: url("/assets/images/moon.svg");
-    background-repeat: no-repeat;   
-    background-size: cover;
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+  height: 1.5rem;
+  width: 1.5rem;
+  transition: transform 500ms;
+  background-image: url("/assets/images/moon.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-#theme-toggle:checked + .sun{
-    transform: scale(1) rotate(360deg);
+#theme-toggle:checked + .sun {
+  transform: scale(1) rotate(360deg);
 }
-#theme-toggle:checked ~ .moon{
-    transform: rotate(360deg) scale(0);
+#theme-toggle:checked ~ .moon {
+  transform: rotate(360deg) scale(0);
 }
-
-

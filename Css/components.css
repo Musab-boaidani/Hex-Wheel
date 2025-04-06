@@ -1,133 +1,130 @@
 /* Color Row */
 .color-row {
-    display: grid;
-    grid-template-columns: repeat(8, 3.5rem);
-    grid-gap: 0.3rem;
-    margin-top: 1rem;
-    
+  display: grid;
+  grid-template-columns: repeat(8, 3.5rem);
+  grid-gap: 0.3rem;
+  margin-top: 1rem;
 }
 .color-box {
-    aspect-ratio: 1 / 1;
-    width: 100%;
-    border: 0.1rem dashed var(--primary-color);
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2.5rem;
-    border-radius: 0.5rem;
-    background-color: var(--background-color);
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  border: 0.1rem dashed var(--primary-color);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--background-color);
 }
 .win-color-box {
-
-    width: 5rem;
-    height: 5rem;
-    border: 0.1rem dashed var(--primary-color);
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2.5rem;
-    border-radius: 0.5rem;
-    background-color: var(--background-color);
+  width: 5rem;
+  height: 5rem;
+  border: 0.1rem dashed var(--primary-color);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--background-color);
 }
 
 .display-none {
-    display: none !important;
+  display: none !important;
 }
-#Answer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1rem;
-    
+#Answer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
 }
-#Answer-color-box{
-    aspect-ratio: 1 / 1;
-    width: 3.5rem;
-    border: 0.1rem solid var(--primary-color);
-    border-radius: 0.5rem;
-    margin-bottom: .5rem;
-    margin-top: .5rem;
+#Answer-color-box {
+  aspect-ratio: 1 / 1;
+  width: 3.5rem;
+  border: 0.1rem solid var(--primary-color);
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
 }
-#current-color{
-    transition: background-color 0s, color 0.5s, border 0.5s;
+#current-color {
+  transition: background-color 0s, color 0.5s, border 0.5s;
 }
 #num {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    font-size: 2.5rem;
-    width: 3.5rem;
-    height: 3.5rem;
-    font-weight: bolder;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 2.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  font-weight: bolder;
 }
 
 /* Guess Row */
 #guess .color-box {
-    border: 0.1rem solid var(--primary-color);
+  border: 0.1rem solid var(--primary-color);
 }
 #guess .color-row {
-    animation: slideDown 0.5s ease-in-out;
+  animation: slideDown 0.5s ease-in-out;
 }
 
 /* Button Styles */
 .btn {
-    margin-top: 1rem;
-    align-items: center;
-    background-color:var(--primary-color) ;
-    color: var(--background-color);
-    border: 1px solid var(--background-color);
-    border-radius: 2rem;
-    cursor: pointer;
-    display: inline-flex;
-    font-size: 1.5rem;
-    font-weight: 600;
-    justify-content: center;
-    line-height: 1.25;
-    min-height: 3rem;
-    padding: 0 2rem;
-    text-align: center;
-
+  margin-top: 1rem;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  border: 1px solid var(--background-color);
+  border-radius: 2rem;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 1.5rem;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  min-height: 3rem;
+  padding: 0 2rem;
+  text-align: center;
 }
 .btn:hover {
-    background-color: var(--background-color);
-    color: var(--primary-color);
-    border-color: var(--primary-color) ;
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  border-color: var(--primary-color);
 }
 
 /* Toggle Buttons */
-#max, #shrink {
-    position: relative;
-    left: calc(100% - 2rem);
-    border: none;
-    cursor: pointer;
-    background-color: var(--primary-color);
-    mask-size: cover;
-    background-repeat: no-repeat;
-    background-size: 2rem 2rem;
-    width: 2rem;
-    height: 2rem;
+#max,
+#shrink {
+  position: relative;
+  left: calc(100% - 2rem);
+  border: none;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  mask-size: cover;
+  background-repeat: no-repeat;
+  background-size: 2rem 2rem;
+  width: 2rem;
+  height: 2rem;
 }
 
 #max {
-    mask-image: url(/assets/images/Maximize.svg);
+  mask-image: url(/assets/images/Maximize.svg);
 }
 
 #shrink {
-    mask-image: url(/assets/images/Shrink.svg);
+  mask-image: url(/assets/images/Shrink.svg);
 }
 
 /* tiels Color States */
 .right-Place {
-    background-color: var(--success-color);
-    border: 0.1rem solid var(--primary-color);
+  background-color: var(--success-color);
+  border: 0.1rem solid var(--primary-color);
 }
 
 .wrong-Place {
-    background-color: var(--warning-color);
-    border: 0.1rem solid var(--primary-color);
+  background-color: var(--warning-color);
+  border: 0.1rem solid var(--primary-color);
 }
 
-.IroWheelBorder{
-    border: .2rem solid var(--primary-color) !important;
+.IroWheelBorder {
+  border: 0.2rem solid var(--primary-color) !important;
 }

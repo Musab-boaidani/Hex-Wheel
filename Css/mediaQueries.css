@@ -1,108 +1,88 @@
 /* Media Queries */
 @media (max-width: 768px) {
-    #overlay .modal {
-       
-        width:90%;
-    }
-    header h1{
+  #overlay .modal {
+    width: 90%;
+  }
+  header h1 {
+    font-size: 2rem;
+  }
 
-       font-size: 2rem;
+  hr {
+    width: 25rem;
+  }
+  .color-row {
+    margin-top: 0.7rem;
+    grid-template-columns: repeat(8, 2.5rem);
+  }
+  .color-box {
+    font-size: 2rem;
+  }
+  #Answer-color-box {
+    width: 2.5rem;
+  }
+  #num {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+  }
 
+  @keyframes slideDown {
+    from {
+      transform: translateY(-4.7rem);
+      height: 0;
     }
-
-
-    hr {
-        
-        width: 25rem;
+    to {
+      transform: translateY(0);
+      height: 2rem;
     }
-    .color-row {
-        margin-top: .7rem;
-        grid-template-columns: repeat(8, 2.5rem);
-    }
-    .color-box {
-      
-        font-size: 2rem;
-        
-    }
-    #Answer-color-box{
-        width: 2.5rem;
-    }
-    #num {
-        width:  2.5rem;
-        height:  2.5rem;
-        font-size: 1.5rem;
-    }
-
-    @keyframes slideDown {
-        from {
-            
-            transform: translateY(-4.7rem);
-            height: 0;
-        }
-        to {
-            
-            transform: translateY(0);
-            height: 2rem;
-        }
-    }
+  }
 }
 @media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+  .header-btn {
+    transform: scale(0.5);
+    margin-right: 0.1rem;
+    margin-left: 0.1rem;
+  }
+  #max,
+  #shrink {
+    display: none;
+  }
 
-    header h1{
+  hr {
+    width: 20rem;
+  }
+  .color-row {
+    margin-top: 0.7rem;
+    grid-template-columns: repeat(8, 2rem);
+  }
+  .color-box {
+    font-size: 1.5rem;
+  }
+  #Answer-color-box {
+    width: 2.5rem;
+  }
+  #num {
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.5rem;
+  }
 
-        font-size: 1.5rem;
-
-     }
-     .header-btn{
-       transform: scale(0.5);
-       margin-right: .1rem;
-       margin-left: .1rem;
+  @keyframes slideDown {
+    from {
+      transform: translateY(-3.2rem);
+      height: 0;
     }
-    #max, #shrink {
-        display: none;
+    to {
+      transform: translateY(0);
+      height: 2rem;
     }
-      
-    hr {
-        
-        width: 20rem;
-    }
-    .color-row {
-        margin-top: .7rem;
-        grid-template-columns: repeat(8, 2rem);
-    }
-    .color-box {
-      
-        font-size: 1.5rem;
-        
-    }
-    #Answer-color-box{
-        width: 2.5rem;
-    }
-    #num {
-        width:  2rem;
-        height:  2rem;
-        font-size: 1.5rem;
-    }
-
-    @keyframes slideDown {
-        from {
-            
-            transform: translateY(-3.2rem);
-            height: 0;
-        }
-        to {
-            
-            transform: translateY(0);
-            height: 2rem;
-        }
-    }
-
+  }
 }
 @media (max-width: 320px) {
-
-    hr {
-        
-        width: 15rem;
-    }
-
+  hr {
+    width: 15rem;
+  }
 }

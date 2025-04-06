@@ -1,25 +1,24 @@
 * {
-    font-family: 'Courier New', Courier, monospace;
-    color: var(--primary-color);
-    box-sizing: border-box;
-    transition: var(--my-transition);
+  font-family: "Courier New", Courier, monospace;
+  color: var(--primary-color);
+  box-sizing: border-box;
+  transition: var(--my-transition);
 }
 
 body {
-    background-color: var(--background-color);
-    margin: 0;
-
+  background-color: var(--background-color);
+  margin: 0;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 hr {
-    border-color: var(--primary-color) ;
-    border-style: dashed;
-    width: 40rem;
-    margin-top: 1rem;
+  border-color: var(--primary-color);
+  border-style: dashed;
+  width: 40rem;
+  margin-top: 1rem;
 }
