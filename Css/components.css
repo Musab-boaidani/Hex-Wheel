@@ -107,11 +107,11 @@
 }
 
 #max {
-  mask-image: url(/assets/images/Maximize.svg);
+  mask-image: url("../assets/images/Maximize.svg");
 }
 
 #shrink {
-  mask-image: url(/assets/images/Shrink.svg);
+  mask-image: url("../assets/images/Shrink.svg");
 }
 
 /* tiels Color States */

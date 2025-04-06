@@ -59,7 +59,7 @@
   color: var(--dark-primary-color);
 }
 #btn-howto {
-  mask-image: url(/assets/images/howto.svg);
+  mask-image: url("../assets/images/howto.svg");
   mask-size: cover;
   background-repeat: no-repeat;
   background-size: 2rem 2rem;
@@ -77,7 +77,7 @@
   border-radius: 20% !important;
 }
 #btn-sittings {
-  mask-image: url(/assets/images/gear.svg);
+  mask-image: url("../assets/images/gear.svg");
   mask-size: cover;
   background-repeat: no-repeat;
   background-size: 2rem 2rem;
