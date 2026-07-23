@@ -21,7 +21,7 @@ A simple interactive color game where:
 You can try it here:
 
 * https://musab-boaidani.github.io/Hex-Wheel/
-* https://musab-boaidani.itch.io/hex-wheel
+* [itch.io](https://musab-boaidani.itch.io/hex-wheel)
 
 ---
 
